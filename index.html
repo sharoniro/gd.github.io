@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Index page</title>
+		<script src="../js/canvas.js"></script>
+	</head>
+	<body>
+		ㅇㅅㅇ
+		<canvas id="tutorial" width="150" height="150"></canvas>
+		ㅇㅅㅇ
+	</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Make signature</title>
+	<link rel="stylesheet" href="css/color.css" />
+	<script src="./js/canvas.js"></script>
+</head>
+
+<body onload="init()">
+	<div>
+		<canvas id="signCanvas" style="border: 1px solid gray; margin: 0 auto">
+		</canvas>
+	</div>
+	<!-- pallete -->
+	<div id="box" class="box">
+		<div id="palletBox" class="pallet"></div>
+	</div>
+	<div class="container">
+		<input id="inputText" />
+		<button class="btn1" onclick="moveUp()">Up</button>
+		<button class="btn1" onclick="moveDown()">Down</button>
+		<button class="btn1" onclick="moveLeft()">Left</button>
+		<button class="btn1" onclick="moveRight()">Right</button>
+		<button class="btn1" onclick="reset()">지우기</button>
+		<button class="btn1" onclick="insertText(true)">양각</button>
+		<button class="btn2" onclick="insertText(false)">음각</button>
+		<select id="fontSize">
+			<option value="50px">50px</option>
+			<option value="60px">60px</option>
+			<option value="70px">70px</option>
+			<option value="80px">80px</option>
+			<option value="90px">90px</option>
+		</select>
+		<br />
+		<button class="btn" onclick="copy()">복사</button>
+		<button class="btn" onclick="download()">다운로드</button>
+	</div>
+</body>
+
+</html>
