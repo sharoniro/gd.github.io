@@ -5,6 +5,12 @@
     <title>Make signature</title>
     <link rel="stylesheet" href="css/color.css" />
     <script src="js/canvas.js"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-colorpicker/bootstrap-colorpicker.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-colorpicker/bootstrap-colorpicker.js"></script>
   </head>
 
   <body onload="init()">
@@ -15,6 +21,7 @@
     <div id="box" class="box">
       <div id="paletteBox" class="palette"></div>
     </div>
+    <a href="#" class="btn btn-default" id="color-picker-background">Change background color of div</a>
     <div class="canvasController container">
       <button class="btn1" onclick="moveUp()">Up</button>
       <button class="btn1" onclick="moveDown()">Down</button>
@@ -43,5 +50,12 @@
       <button class="btn" onclick="copy()">복사</button>
       <button class="btn" onclick="download()">다운로드</button>
     </div>
+    <script>
+      $(function () {
+          $('#color-picker-background').colorpicker().on('changeColor', function (e) {
+              $('#chgcolor')[0].style.backgroundColor = e.color.toHex();
+          });
+      });
+    </script>
   </body>
 </html>
