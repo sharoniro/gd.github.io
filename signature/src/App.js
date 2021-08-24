@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Container from './Container';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="App-header">
+      <div className="header">
+        <img src={logo} className="App-logo" alt="logo" height="100px" width="100px" />
+        <h1>SSAFY 교육지원금 서명 생성기</h1>
+      </div>
+
+      <Container />
+
+      <div className="footer">
+        &copy;  SSAFY 5기 서울캠퍼스 최동욱
+      </div>
+
+
     </div>
+
   );
 }
 
