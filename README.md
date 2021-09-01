@@ -23,3 +23,9 @@
 - 부트스트랩 Color Picker
 
   - <https://www.jquery-az.com/a-bootstrap-jquery-color-picker-with-7-demos/>
+
+
+
+### 2021-09-01
+- 소스콘 반 입력시 입력 포맷 밖으로 빠져나가는 오류 수정
+- 교육지원금 서류와 달랐던 멘트 수정
