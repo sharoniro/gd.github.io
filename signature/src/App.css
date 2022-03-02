@@ -4,6 +4,7 @@
 
 .App-logo {
   pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,6 +16,7 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  min-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,9 +34,14 @@
 }
 
 .header {
-  margin: 0 0 10vh 0;
+  margin: 0 0 8vh 0;
   text-align: center;
 }
+
+.header h1 {
+  font-size: 3rem;
+}
+
 .footer {
   margin: 10vh 0 10vh 0;
 }
@@ -47,7 +54,6 @@
   display: flex;
   flex-direction: column;
   max-width: calc(100vw - 1100px);
-  margin: 0 20px;
 }
 .userInput p,
 .input-once {
@@ -63,8 +69,9 @@
   display: contents !important;
 }
 .ui.input > input {
-  max-width: calc(70vw / 3) !important;
+  max-width: 300px !important;
   margin: 20px 40px 20px 0 !important;
+  padding: 10px 25px !important;
 }
 
 .ui.input.second-input > input {
@@ -87,8 +94,24 @@
   left: 0;
 }
 
-.button-group {
-  margin: 40px 0;
+.sign-div {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.sign-div canvas {
+  margin-right: 40px;
+}
+
+.generate-button {
+  display: flex !important;
+  margin: 40px auto !important;
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  font-size: 1.5rem !important;
 }
 
 @keyframes App-logo-spin {

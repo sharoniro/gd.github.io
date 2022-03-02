@@ -4,6 +4,9 @@ import './App.css';
 import Container from './Container';
 
 function App() {
+
+
+
   return (
 
     <div className="App-header">
@@ -15,11 +18,12 @@ function App() {
       <Container />
 
       <div className="footer">
-        &copy;  SSAFY 5기 서울캠퍼스 최동욱
+        <p>&copy;  SSAFY 5기 서울캠퍼스 최동욱</p>
+        <p>문의사항 / 버그 : cheal3@naver.com</p>
       </div>
 
 
-    </div>
+    </div >
 
   );
 }

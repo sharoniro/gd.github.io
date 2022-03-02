@@ -6,21 +6,25 @@ const Container = () => {
   const today = new Date();
   const [inputs, setInputs] = useState({
     name: '김싸피',
+    year: today.getFullYear(),
     month: today.getMonth() + 1,
     date: today.getDate(),
     attendMonth: today.getMonth(),
-    totalDays: 1,
-    attendDays: 1,
+    totalDays: 19,
+    attendDays: 19,
     location: '서울',
-    classNum: 6,
+    classNum: 1,
+    sign: '',
   })
 
   return (
-    <div className="container">
-      <div>
-        <Canvas inputs={inputs} />
-      </div>
+    <div>
+
+
+
       <UserInput inputs={inputs} setInputs={setInputs} />
+      <Canvas inputs={inputs} />
+
     </div>
   )
 }
